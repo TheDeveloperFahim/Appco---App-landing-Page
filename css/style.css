@@ -1,0 +1,656 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 15px;
+  font-weight: 300;
+  color: #707b8e;
+  font-family: "Poppins", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 65;
+  font-weight: 500;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0 !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+.section-title {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.section-title h2 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #2b044d;
+  width: 52%;
+  margin-left: 240px;
+}
+
+.row-padding {
+  padding-top: 3rem;
+}
+
+/*********** Start main coding ***********/
+#header {
+  background: #f4feff;
+  padding: 10px;
+}
+
+header#header.sticky {
+  background: #fff;
+  padding: 10px 0 !important;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  padding: 0;
+  z-index: 10;
+  transition: all ease-in-out 0.5s;
+  box-shadow: 0 10px 15px rgb(25 25 25 / 10%);
+}
+
+.main-menu {
+  margin-bottom: -15px;
+  transition: 0.5s;
+}
+
+.main-menu.slideLeft {
+  left: 0;
+}
+
+.main-menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-menu ul li a {
+  text-transform: capitalize;
+  color: #653790;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px;
+  margin-right: 2rem;
+  display: block;
+  position: relative;
+}
+
+.main-menu ul li a#active::before {
+  width: 100%;
+}
+
+.main-menu ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  height: 2px;
+  width: 0%;
+  background: #a60dcf;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.main-menu ul li a:hover::before {
+  width: 100%;
+}
+
+#moible-menu-icon {
+  display: none;
+}
+
+/********** Hero **********/
+#hero {
+  background: #f4feff;
+}
+
+.hero-content {
+  margin-top: 20%;
+}
+
+.hero-content h5 {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #653790;
+  font-weight: 700;
+}
+
+.hero-content h2 {
+  margin: 1rem 0 2rem 0;
+  font-size: 65px;
+  font-weight: 700;
+  color: #2b044d;
+}
+
+.hero-content p {
+  color: #788294;
+  line-height: 2rem;
+  width: 78%;
+}
+
+.hero-btns {
+  padding: 20px 0;
+}
+
+button.main-btn {
+  border: none;
+  text-transform: capitalize;
+  color: #fff;
+  padding: 15px 3rem;
+  background: #e63788;
+  border-radius: 50px;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+
+button.main-btn:hover {
+  background: #da1276;
+}
+
+.hero-btns a {
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  background: #d852e8;
+  border-radius: 50%;
+  color: #fff !important;
+}
+
+.hero-img img {
+  margin-left: 8rem;
+}
+
+/********** feature **********/
+.feature-img img {
+  width: 450px;
+  margin-left: -6rem;
+  margin-bottom: 2rem;
+}
+
+.feature-content {
+  margin-left: 14rem;
+  margin-top: 2rem;
+}
+
+h2.feature-title {
+  padding-bottom: 25px;
+  font-size: 50px;
+  font-weight: 700;
+  color: #2b044d;
+  width: 90%;
+}
+
+.fur-ser-item {
+  margin-left: 5rem;
+  position: relative;
+  padding-bottom: 4rem;
+}
+
+.fur-ser-icon i {
+  position: absolute;
+  left: -6rem;
+  font-size: 30px;
+  background: linear-gradient(#9c71f6, #de87ea);
+  padding: 15px;
+  border-radius: 50px;
+  display: grid;
+  color: #fff;
+}
+
+.fur-ser-text h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #23182c;
+}
+
+.fur-ser-text p {
+  color: #707b8e;
+  line-height: 1.8em;
+}
+
+/********** Services **********/
+#services {
+  background: #f4feff;
+}
+
+.services-item {
+  background: #fff;
+  text-align: center;
+  padding: 40px 30px;
+  margin: 5px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+  border: 1px solid #fff;
+}
+
+.services-item:hover {
+  border-color: #b8a2ff;
+  cursor: pointer;
+}
+
+.ser-icon {
+  padding: 20px 0;
+}
+
+.ser-icon i {
+  color: #fff;
+  font-size: 35px;
+  display: grid;
+  place-items: center;
+  background: #e88cea;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin: 10px auto;
+  transition: 0.5s;
+}
+
+.services-item:hover .ser-icon i {
+  background: #835ef8;
+}
+
+.back-shape-img img {
+  position: absolute;
+  top: 2rem;
+  left: 11rem;
+  z-index: -1;
+  padding-top: 2px;
+  transition: 0.5s;
+}
+
+.services-item:hover .back-shape-img img {
+  transform: translateX(10px);
+}
+
+.ser-text h3 {
+  padding: 1rem 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #2b044d;
+  transition: 0.5s;
+}
+
+.ser-text h3:hover {
+  color: #8363f8;
+}
+
+.ser-text p {
+  line-height: 1.8rem;
+  color: #707b8e;
+  font-size: 15px;
+}
+
+#ser-active {
+  border-color: #b8a2ff;
+}
+
+#ser-active .ser-icon i {
+  background: #835ef8;
+}
+
+#ser-active .back-shape-img img {
+  transform: translateX(10px);
+}
+
+/*********** App Screenshot ***********/
+.screenshot-text h2 {
+  font-size: 45px;
+  font-weight: 700;
+  color: #2b044d;
+  padding-bottom: 15px;
+}
+
+.screenshot-text p {
+  line-height: 30px;
+  color: #707baa;
+  font-size: 15px;
+}
+
+/*********** Price ***********/
+#price {
+  background: linear-gradient(90deg, #f9218df6, #6c19f6f8),
+    url("../img/price-bg.webp");
+  height: 36rem;
+}
+
+#price .section-title h2 {
+  color: #fff;
+  font-size: 45px;
+}
+
+.price-box-sec {
+  padding: 20px;
+  transform: translateY(2rem);
+}
+
+.price-box {
+  background: #ffffff;
+  padding: 35px 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.price-header {
+  padding: 20px 0;
+}
+
+.price-header h5 {
+  font-size: 25px;
+  padding-bottom: 10px;
+  font-weight: 600;
+  color: #5c667e;
+}
+
+.price-header h1 {
+  font-size: 45px;
+  font-weight: 700;
+  color: #6a56a6;
+}
+
+.price-header span {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.price-body li {
+  padding-bottom: 15px;
+  color: #717081;
+  font-weight: 300;
+}
+
+.price-body {
+  padding: 20px;
+}
+
+.price-btn .main-btn {
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background: #712fda;
+}
+
+.price-btn .main-btn:hover {
+  background: #ff374b;
+}
+
+/*********** Testimonial ***********/
+section#testimonial {
+  margin-top: 16rem;
+}
+
+.testimonial-item {
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.testimonial-item:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 0px 15px 0 #ddd;
+}
+
+.testimonial-item img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+}
+
+.testimonial-item h5 {
+  padding-top: 15px;
+  font-size: 20px;
+  text-transform: capitalize;
+  line-height: 30px;
+  font-weight: 600;
+  color: #a445e2;
+  cursor: pointer;
+}
+
+.testimonial-item p {
+  font-size: 15px;
+  line-height: 25px;
+  color: #787878;
+}
+
+/*********** App Download ***********/
+#app-download {
+  background: linear-gradient(-90deg, #f9218d, #6c19f6);
+  position: relative;
+  height: 120vh;
+}
+
+span.app-download-circal {
+  height: 60px;
+  width: 60px;
+  background: #9548ef;
+  border-radius: 50px;
+  position: absolute;
+  top: 8%;
+  animation: zoomInOut_01 3s ease infinite;
+}
+
+@keyframes zoomInOut_01 {
+  0% {
+    transform: scale(0.5);
+  }
+  80% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.5);
+  }
+}
+
+.app-download-content {
+  margin-top: 6rem;
+}
+
+.app-download-content h2 {
+  font-size: 50px;
+  color: #fff;
+  font-weight: 600;
+  width: 80%;
+  line-height: 4rem;
+  padding-bottom: 20px;
+}
+
+.app-download-content p {
+  color: #fff;
+  width: 80%;
+}
+
+.app-download-content img {
+  padding-top: 1rem;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.app-download-img img {
+  max-width: 100%;
+  margin-top: 7rem;
+}
+
+.app-download-shape img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+/*********** Contact ***********/
+form.contact-form {
+  padding: 20px;
+  position: relative;
+}
+
+form.contact-form input {
+  border: 1px solid #e9e9e9;
+  outline: none;
+  background: #ffffff;
+  padding: 20px 20px;
+  border-radius: 50px;
+  width: 60%;
+  transition: 0.5s;
+}
+
+form.contact-form input:focus {
+  border-color: #6c19f6;
+}
+
+form.contact-form button.main-btn {
+  position: absolute;
+  left: 46rem;
+  top: 25px;
+}
+
+/*********** Footer ***********/
+#footer {
+  border-top: 1px solid #ffc9fd;
+}
+
+#footer .col-lg-3 {
+  padding-top: 5rem;
+}
+
+.about-text {
+  padding: 10px;
+  margin-right: 15px;
+}
+
+.about-text img {
+  padding-bottom: 20px;
+}
+
+.about-text p {
+  line-height: 26px;
+  font-size: 15px;
+  color: #787878;
+}
+
+.footer-title {
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 20px;
+  color: #191919;
+}
+
+.footer-links ul li {
+  text-transform: capitalize;
+  padding-bottom: 15px;
+}
+
+.footer-links ul li a {
+  color: #868c98;
+  font-size: 15px;
+  transition: 0.5s;
+}
+
+.footer-links ul li a:hover {
+  color: #bd78ea;
+  margin-left: 5px;
+}
+
+.footer-newsletter p {
+  color: #788294;
+  line-height: 26px;
+  padding-bottom: 20px;
+}
+
+form.newsletter input {
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  background: #f9feff;
+  width: 100%;
+}
+
+form.newsletter {
+  position: relative;
+}
+
+button.msg-btn {
+  border: none;
+  padding: 10px 20px;
+  background: #8f1bdc;
+  position: absolute;
+}
+
+.copy-right-text p {
+  font-size: 15px;
+  color: #a9a9a9;
+}
+
+.copy-right-text i {
+  color: #fa50a5;
+}
+
+.copy-right-text a {
+  color: #fa50a5;
+  transition: 0.5s;
+}
+
+.copy-right-text a:hover {
+  color: #6c19f6;
+}
+
+/*********** Scroll Up Btn ***********/
+button.scrollUp {
+  position: fixed;
+  bottom: 3rem;
+  right: 2rem;
+  background: #8f1bdc;
+  border: none;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  padding: 10px;
+  display: none;
+}
+
+button.scrollUp i {
+  color: #fff;
+  font-size: 22px;
+}
+
+/************ Preloader ************/
+.preloader {
+  width: 100%;
+  height: 100vh;
+  background: #fff url("../img/preloader.gif") no-repeat center center;
+  background-size: 40%;
+  position: fixed;
+  z-index: 100;
+}
